@@ -1,9 +1,9 @@
 
 ##&lt;react-polymer-timer&gt;
 
-This is a poc for wrapping react timer component inside polymer (micro) which exposes web component
+This is a poc for wrapping react timer component inside polymer (micro) which exposes web component. Example taken form the Facebook React example https://facebook.github.io/react/
 
-## Quick Install
+### Quick Install
 
 ```
 bower install
