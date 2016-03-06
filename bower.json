@@ -1,0 +1,29 @@
+{
+  "name": "react-polymer-timer",
+  "authors": [
+    "Januar Wayong <januar@gmail.com>"
+  ],
+  "description": "A Proof of concept wrapping React code inside Polymer Micro",
+  "main": "react-polymer-timer.html",
+  "moduleType": [],
+  "keywords": [
+    "web-components",
+    "reactjs",
+    "react",
+    "polymer"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "^0.7.20",
+    "polymer" : "^1.3.1",
+    "react" : "^0.14.7"
+  }
+}
