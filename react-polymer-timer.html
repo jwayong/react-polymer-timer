@@ -6,10 +6,9 @@
 		is: 'react-polymer-timer',
 		created: function() {
 			/*Shadow DOM*/
-		  	var mountPoint = document.createElement('span');
-	      	this.createShadowRoot().appendChild(mountPoint);
-
-	      	/*React*/
+			var mountPoint = document.createElement('span');
+			this.createShadowRoot().appendChild(mountPoint);
+			/*React*/
 			var Timer = React.createClass({
 			  displayName: 'Timer',
 			  getInitialState: function() {
@@ -28,10 +27,8 @@
 			    return React.createElement("div",null,"Seconds Elapsed: "+this.state.secondsElapsed);
 			  }
 			});
-	
 			/*Mount to Shadow DOM*/
 			ReactDOM.render(React.createElement(Timer), mountPoint);
-
 		}
-	})
+	});
 </script>
