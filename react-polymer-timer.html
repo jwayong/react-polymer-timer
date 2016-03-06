@@ -4,15 +4,12 @@
 <script>
 	Polymer({
 		is: 'react-polymer-timer',
-		properties: {
-			greet: {
-				type: String
-			}
-		},
 		created: function() {
-		  var mountPoint = document.createElement('span');
-	      this.createShadowRoot().appendChild(mountPoint);
+			/*Shadow DOM*/
+		  	var mountPoint = document.createElement('span');
+	      	this.createShadowRoot().appendChild(mountPoint);
 
+	      	/*React*/
 			var Timer = React.createClass({
 			  displayName: 'Timer',
 			  getInitialState: function() {
@@ -31,13 +28,8 @@
 			    return React.createElement("div",null,"Seconds Elapsed: "+this.state.secondsElapsed);
 			  }
 			});
-
-			var Hello = React.createClass({
-			  displayName: 'Hello',
-			  render: function() {
-			    return React.createElement("div", null, "Hello ", this.props.name);
-			  }
-			});
+	
+			/*Mount to Shadow DOM*/
 			ReactDOM.render(React.createElement(Timer), mountPoint);
 
 		}
